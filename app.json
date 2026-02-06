@@ -7,7 +7,7 @@
     "icon": "./app/assets/app-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./app/assets/app-logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,7 +17,13 @@
     "ios": {
       "supportsTablet": true
     },
-    "android": {},
+    "android": {
+      "package": "com.rayancode.carbit",
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/app-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
     "web": {},
     "plugins": [
       "expo-router",
@@ -25,6 +31,12 @@
       "expo-font",
       "expo-localization"
     ],
-    "scheme": "carbit"
+    "scheme": "carbit",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d8d9a23b-a3ca-4e10-b8a2-b107163eec64"
+      }
+    }
   }
 }
